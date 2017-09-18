@@ -1,0 +1,50 @@
+call plug#begin()
+Plug 'morhetz/gruvbox'
+Plug 'tpope/vim-sensible'
+Plug 'Raimondi/delimitMate'
+Plug 'Yggdroot/indentLine'
+Plug 'davidhalter/jedi-vim'
+Plug 'fs111/pydoc.vim'
+Plug 'ervandew/supertab'
+Plug 'majutsushi/tagbar'
+Plug 'tomtom/tcomment_vim'
+Plug 'vim-airline/vim-airline'
+Plug 'nvie/vim-flake8'
+Plug 'thinca/vim-quickrun'
+call plug#end()
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" syntax highlighting
+syntax enable
+set t_Co=256
+color gruvbox
+set background=dark
+
+"splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" flake8
+autocmd BufWritePost *.py call Flake8()
+let g:flake8_show_in_gutter=1
+
+" Toggle line numbers and fold column for easy copying:
+nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
+
+" Tags
+nmap <F5> :TagbarToggle<CR>
+let g:airline#extensions#tabline#enabled = 1
+
+let mapleader=","
+noremap <Leader>b :QuickRun<CR>
+
+" Show Line Numbers
+set nu
+
+" Jedi-vim settings
+let g:jedi#show_call_signatures = "0"
