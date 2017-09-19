@@ -82,8 +82,8 @@ vim ~/.vimrc
 
 ## Shortcuts
 
-1. <F1> - vim main help file
-2. <F2> - hide/show line numbers
-3. <F5> - tagbar toggle (class outline)
-4. <CTRL w> h j k l - move to split window left/down/up/right  
-5. <CTRL ,> - run your code in split window
+1. < F1 > - vim main help file
+2. < F2 > - hide/show line numbers
+3. < F5 > - tagbar toggle (class outline)
+4. < CTRL w > < h j k l > - move to split window left/down/up/right  
+5. < CTRL , > - run your code in split window
