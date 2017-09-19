@@ -1,5 +1,8 @@
 # vim-dotfiles
 
+![vim]
+(https://i.imgur.com/j5zBgjW.png)
+
 ## Prerequisites
 
 1. vim (version 8)
