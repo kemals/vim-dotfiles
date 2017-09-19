@@ -1,7 +1,6 @@
 # vim-dotfiles
 
-![vim]
-(https://i.imgur.com/j5zBgjW.png)
+![vim](https://i.imgur.com/j5zBgjW.png)
 
 ## Prerequisites
 
