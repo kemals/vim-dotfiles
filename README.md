@@ -52,6 +52,10 @@ Style and syntax checher for Python code. If you are Python developer you may wa
 
 Want to quickly run code that you just wrote in another split window? This is plugin for you. 
 
+12. [ale](https://github.com/w0rp/ale)
+
+Asynchronous Lint Engine for vim. It supports multiple languages and it is quite nice. Strong recommendation.
+
 ## Setup
 
 1. Clone this repo:

@@ -11,6 +11,7 @@ Plug 'tomtom/tcomment_vim'
 Plug 'vim-airline/vim-airline'
 Plug 'nvie/vim-flake8'
 Plug 'thinca/vim-quickrun'
+Plug 'w0rp/ale'
 call plug#end()
 
 set tabstop=4
@@ -31,7 +32,7 @@ nnoremap <C-H> <C-W><C-H>
 
 " flake8
 autocmd BufWritePost *.py call Flake8()
-let g:flake8_show_in_gutter=1
+" let g:flake8_show_in_gutter=1
 
 " Toggle line numbers and fold column for easy copying:
 nnoremap <F2> :set nonumber!<CR>:set foldcolumn=0<CR>
@@ -48,3 +49,6 @@ set nu
 
 " Jedi-vim settings
 let g:jedi#show_call_signatures = "0"
+
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
